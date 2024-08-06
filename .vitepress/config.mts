@@ -13,7 +13,7 @@ export default defineConfig({
     },
     nav: [
       { text: '首页', link: '/' },
-      { text: '文档', link: '/文档/介绍' }
+      { text: '文档', link: '/文档/快速开始' }
     ],
     search: {
       provider: 'local',

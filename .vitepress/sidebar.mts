@@ -1,6 +1,6 @@
 export default {
     '文档': [{
-        text: "快速开始",
+        text: "Minecraft-QQ-Bot",
         items: [
             {
                 text: "快速开始",
