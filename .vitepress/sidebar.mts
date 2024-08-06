@@ -7,20 +7,17 @@ export default {
                 link: "/文档/快速开始"
             },
             {
-                text: "搭建环境",
-                link: "/文档/搭建环境"
-            },
-            {
                 text: "安装插件",
-                link: "/文档/安装插件"
-            },
-            {
-                text: "运行服务",
-                link: "/文档/运行服务"
-            },
-            {
-                text: "升级",
-                link: "/文档/升级"
+                items: [
+                    {
+                        text: "Spigot",
+                        link: "/文档/安装插件/Spigot"
+                    },
+                    {
+                        text: "McdReforged",
+                        link: "/文档/安装插件/McdReforged"
+                    }
+                ]
             },
             {
                 text: "常见问题",
