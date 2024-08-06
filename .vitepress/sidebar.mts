@@ -11,6 +11,10 @@ export default {
                 items: [
                     {
                         text: "Spigot",
+                        link: "/文档/安装插件/安装插件"
+                    },
+                    {
+                        text: "Spigot",
                         link: "/文档/安装插件/Spigot"
                     },
                     {
