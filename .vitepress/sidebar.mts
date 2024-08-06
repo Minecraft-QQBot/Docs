@@ -1,6 +1,6 @@
 export default {
     '文档': [{
-        text: "快速开始",
+        text: "Minecraft-QQ-Bot",
         items: [
             {
                 text: "快速开始",
@@ -8,11 +8,8 @@ export default {
             },
             {
                 text: "安装插件",
+                link: "/文档/安装插件/安装插件",
                 items: [
-                    {
-                        text: "Spigot",
-                        link: "/文档/安装插件/安装插件"
-                    },
                     {
                         text: "Spigot",
                         link: "/文档/安装插件/Spigot"
@@ -22,6 +19,10 @@ export default {
                         link: "/文档/安装插件/McdReforged"
                     }
                 ]
+            },
+            {
+                text: "升级",
+                link: "/文档/升级"
             },
             {
                 text: "常见问题",
