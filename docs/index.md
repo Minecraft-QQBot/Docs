@@ -10,7 +10,7 @@ hero:
   actions:
     - theme: brand
       text: 快速开始
-      link: /文档/安装插件
+      link: /文档/快速开始
     - theme: alt
       text: 查看更多
       link: /
