@@ -17,6 +17,10 @@ export default {
                     {
                         text: "McdReforged",
                         link: "/文档/安装插件/McdReforged"
+                    },
+                    {
+                        text: "FakePlayer",
+                        link: "/文档/安装插件/FakePlayer"
                     }
                 ]
             },
