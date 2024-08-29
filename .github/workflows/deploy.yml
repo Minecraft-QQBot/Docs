@@ -18,31 +18,21 @@ jobs:
       - name: 🐧 配置环境
         uses: actions/setup-node@v2
         with:
-          node-version: "20"
-
-      - name: 🛠️ 打包静态文件
+          node-version: '20'
+      
+      - name: 🛠️ Build
         run: |
           npm install
           npm run docs:build
 
       - name: 🚁 部署到服务器
-        uses: easingthemes/ssh-deploy@v2.1.5
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
-          # 服务器地址
-          ssh-hostname: ${{ secrets.SSH_HOST }}
-          # 服务器端口
-          ssh-port: 22
-          # 服务器用户名
-          ssh-username: ${{ secrets.SSH_USERNAME }}
-          # 服务器密码或私钥
-          ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
-          # 要部署的目录
-          remote-dir: ${{ secrets.WEB_PATH }}
-          # 要部署的文件或目录
-          file-glob: "**/*"
-          # 排除的文件或目录
-          exclude-file: ".gitignore"
-          # 压缩文件
-          compression: none
-          # 部署前清空远程目录
-          delete-files: true
+          username: ${{ secrets.SSH_USERNAME }} #ssh user name
+          port: '22' # 远程服务器ssh端口，默认22
+          server: ${{ secrets.SSH_HOST }} # 远程服务器IP地址
+          password: ${{ secrets.SSH_PASSWORD }} # 远程服务器密码
+          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }} # 认证服务器秘钥对的私钥
+          local_path: './vitepress/dist/*' # 对应我们项目打包后的静态文件路径
+          remote_path: ${{ secrets.WEB_PATH }} # 服务器上的路径
+          delete_remote_files: true # 是否删除远程服务器上的文件
