@@ -1,6 +1,6 @@
-# Platform.FakePlayer
+# FakePlayer
 
-通过在服务器上挂假人来与 [BotServer](https://github.com/Minecraft-QQBot/BotServer) 对接的工具，基于 Node.js 的 mineflayer 库。
+这是一个通过在服务器上挂假人来与 [BotServer](https://github.com/Minecraft-QQBot/BotServer) 对接的工具，基于 Node.js 的 mineflayer 库。
 
 > [!CAUTION]
 > 只有 Mineflayer 库支持的 Minecraft 版本才能使用本工具，支持范围请到 [这里](https://prismarinejs.github.io/mineflayer/#/zh/README_ZH_CN?id=特点) 查看。
@@ -17,8 +17,11 @@
 安装 Node.js 完毕后，你还需要安装如下依赖库。安装指令如下：
 
 ```bash
-npm install mineflayer websocket base-64 utf8
+npm install mineflayer base-64 utf8 ws
 ```
+
+> [!WARNING]
+> Windows 下请确保执行指令的目录是 FakePlayer 所在的目录，否则可能无法找到依赖库。你可以用 `cd` 指令切换，也可以直接在文件管理器中打开 FakePlayer 所在的目录，在路径栏输入 `cmd` 打开命令行。
 
 > [!TIP]
 > 若下了很久也没有安装成功，甚至报错，请尝试设置镜像源：
