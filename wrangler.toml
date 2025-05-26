@@ -1,3 +1,0 @@
-name = "mcbot-docs"
-pages_build_output_dir = "./vitepress/dist"  # 你需要上传打包的目录
-send_metrics = false
